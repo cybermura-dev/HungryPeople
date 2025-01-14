@@ -1,4 +1,4 @@
-package ru.takeshiko.hungrypeople
+package ru.takeshiko.hungrypeople.ui
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import ru.takeshiko.hungrypeople.R
 
 /**
  * SplashActivity is the initial activity shown when the app is launched.
@@ -21,7 +22,10 @@ class SplashActivity : AppCompatActivity() {
      * In this case, the splash screen delay duration.
      */
     private companion object {
-        const val SPLASH_DELAY_MS = 2000L // Delay duration for splash screen in milliseconds
+        /**
+         * Delay duration for the splash screen in milliseconds.
+         */
+        const val SPLASH_DELAY_MS = 2000L
     }
 
     /**
@@ -40,6 +44,7 @@ class SplashActivity : AppCompatActivity() {
     /**
      * Initiates a delay before transitioning to the HomeActivity.
      * After the delay, it starts HomeActivity and finishes the SplashActivity.
+     * This method uses Kotlin coroutines to handle the delay asynchronously.
      */
     private fun navigateToNextActivity() {
         lifecycleScope.launch {

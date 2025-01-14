@@ -1,4 +1,4 @@
-package ru.takeshiko.hungrypeople
+package ru.takeshiko.hungrypeople.ui
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
@@ -10,14 +10,16 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
+import ru.takeshiko.hungrypeople.R
 import ru.takeshiko.hungrypeople.clients.SupabaseClient
 import ru.takeshiko.hungrypeople.models.Reservation
-import ru.takeshiko.hungrypeople.ui.ViewClickAnimator
+import ru.takeshiko.hungrypeople.ui.animators.ViewClickAnimator
 import java.text.SimpleDateFormat
 import java.util.*
 
 /**
- * Activity for booking a table in a restaurant. This activity allows users to provide their details
+ * Activity for booking a table in a restaurant.
+ * This activity allows users to provide their details
  * and choose a date and time for the reservation.
  */
 class BookTableActivity : AppCompatActivity() {
@@ -58,6 +60,7 @@ class BookTableActivity : AppCompatActivity() {
         dateField.setOnClickListener { showDatePickerDialog() }
         timeField.setOnClickListener { showTimePickerDialog() }
 
+        // Create an animator for button click animations
         val animator = ViewClickAnimator()
 
         // Set listener for the send button to validate input and check reservation availability

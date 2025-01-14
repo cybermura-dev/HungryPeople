@@ -1,11 +1,12 @@
-package ru.takeshiko.hungrypeople
+package ru.takeshiko.hungrypeople.ui
 
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import ru.takeshiko.hungrypeople.ui.ViewClickAnimator
+import ru.takeshiko.hungrypeople.R
+import ru.takeshiko.hungrypeople.ui.animators.ViewClickAnimator
 
 /**
  * HomeActivity class is the entry point of the application.
@@ -17,8 +18,9 @@ class HomeActivity : AppCompatActivity() {
     /**
      * Called when the activity is created.
      * Initializes the views and sets click listeners for buttons.
+     * This method also initializes a {@link ViewClickAnimator} to provide button click animations.
      *
-     * @param savedInstanceState Bundle object that contains the activity's previous state.
+     * @param savedInstanceState Bundle object that contains the activity's previous state, if any.
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,7 +49,7 @@ class HomeActivity : AppCompatActivity() {
 
         /**
          * Sets the click listener for the "Explore" button.
-         * When clicked, it navigates to the ExploreActivity.
+         * When clicked, it navigates to the {@link ExploreActivity}.
          */
         btnExplore.setOnClickListener {
             animator.animate(btnExplore, onAnimationEnd = {
@@ -89,6 +91,9 @@ class HomeActivity : AppCompatActivity() {
 
     /**
      * Opens the given URL in a browser using an intent.
+     * This method creates an {@link Intent} with the {@link Intent#ACTION_VIEW} action
+     * and starts the activity to open the URL.
+     *
      * @param url The URL to be opened.
      */
     private fun openUrl(url: String) {

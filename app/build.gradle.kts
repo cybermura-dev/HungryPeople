@@ -12,7 +12,7 @@ android {
         applicationId = "ru.takeshiko.hungrypeople"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
+        versionCode = 2
         versionName = "1.0"
 
         // testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -61,6 +61,9 @@ dependencies {
 
     // Networking
     implementation("io.ktor:ktor-client-android:3.0.3")
+
+    // SDK Yandex Map Kit
+    implementation("com.yandex.android:maps.mobile:4.10.1-lite")
 
     // Testing dependencies
     // testImplementation("junit:junit:4.13.2")

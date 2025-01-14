@@ -3,6 +3,8 @@
 
     <string name="restaurant">RESTAURANT</string>
     <string name="restaurant_name">HUNGRY PEOPLE</string>
+    <string name="our_location">OUR LOCATION</string>
+    <string name="contact">CONTACT</string>
     <string name="book_a_table">BOOK A TABLE</string>
 
     <string name="working_hours_mon_fri">Mon - Fri: 8PM - 10PM</string>
@@ -15,10 +17,14 @@
     <string name="logo_facebook">Facebook</string>
     <string name="logo_instagram">Instagram</string>
     <string name="logo_twitter">Twitter</string>
+    <string name="logo_email">Email</string>
+    <string name="logo_phone">Phone</string>
+    <string name="logo_card">Card</string>
 
     <string name="btn_book_table">BOOK TABLE</string>
     <string name="btn_explore">EXPLORE</string>
     <string name="btn_send">BOOK NOW</string>
+    <string name="btn_send_message">SEND MESSAGE</string>
 
     <string name="hint_name">Name</string>
     <string name="hint_email">Email</string>
@@ -26,4 +32,9 @@
     <string name="hint_people">People</string>
     <string name="hint_date">Date (mm/dd)</string>
     <string name="hint_time">Time</string>
+    <string name="hint_message">Message</string>
+
+    <string name="contact_address">5th London Boulevard, U.K.</string>
+    <string name="contact_phone">+40 729 131 637 \\\n+40 726 458 782</string>
+    <string name="contact_email">office@mindblister.com</string>
 </resources>

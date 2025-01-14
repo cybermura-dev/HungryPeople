@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".BookTableActivity">
+    tools:context=".ui.BookTableActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_start"
@@ -156,7 +156,7 @@
             android:inputType="textPersonName"
             android:padding="16dp"
             android:textColor="@color/gray"
-            android:textColorHint="@color/gray" />
+            android:textColorHint="@color/semi_gray" />
 
         <EditText
             android:id="@+id/email_field"
@@ -170,7 +170,7 @@
             android:background="@drawable/field_style"
             android:hint="@string/hint_email"
             android:textColor="@color/black"
-            android:textColorHint="@color/gray"
+            android:textColorHint="@color/semi_gray"
             android:inputType="textEmailAddress"
             android:autofillHints="emailAddress" />
 
@@ -186,7 +186,7 @@
             android:background="@drawable/field_style"
             android:hint="@string/hint_phone"
             android:textColor="@color/black"
-            android:textColorHint="@color/gray"
+            android:textColorHint="@color/semi_gray"
             android:inputType="phone"
             android:autofillHints="phone" />
 
@@ -202,7 +202,7 @@
             android:background="@drawable/field_style"
             android:hint="@string/hint_people"
             android:textColor="@color/black"
-            android:textColorHint="@color/gray"
+            android:textColorHint="@color/semi_gray"
             android:inputType="number"
             android:autofillHints="none" />
 
@@ -218,7 +218,7 @@
             android:hint="@string/hint_date"
             android:textSize="18sp"
             android:textColor="@color/black"
-            android:textColorHint="@color/gray"
+            android:textColorHint="@color/semi_gray"
             android:clickable="true"
             android:focusable="true"
             android:gravity="center_vertical|start" />
@@ -235,7 +235,7 @@
             android:hint="@string/hint_time"
             android:textSize="18sp"
             android:textColor="@color/black"
-            android:textColorHint="@color/gray"
+            android:textColorHint="@color/semi_gray"
             android:clickable="true"
             android:focusable="true"
             android:gravity="center_vertical|start" />

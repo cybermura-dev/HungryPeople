@@ -1,4 +1,4 @@
-package ru.takeshiko.hungrypeople.ui
+package ru.takeshiko.hungrypeople.ui.animators
 
 import android.animation.Animator
 import android.animation.AnimatorSet
