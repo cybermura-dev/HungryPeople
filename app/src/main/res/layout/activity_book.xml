@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".BookTableActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_box"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_inputs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_anchor"
+        android:contentDescription="@string/logo_app_desc"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_logo"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@+id/guideline_top" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/book_a_table"
+        android:textColor="@color/black"
+        android:fontFamily="@font/banny_bold"
+        android:gravity="center"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="30sp"
+        app:autoSizeMaxTextSize="80sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_title"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@+id/guideline_logo" />
+
+    <View
+        android:id="@+id/colored_box"
+        android:layout_width="100dp"
+        android:layout_height="10dp"
+        android:background="@color/primary_color"
+        android:outlineProvider="background"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_box"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@+id/guideline_title"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/btn_secondary"
+        android:text="@string/btn_send"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@drawable/btn_secondary_text"
+        android:fontFamily="@font/tenorsans_regular"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_button"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@+id/guideline_inputs"/>
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_inputs"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@+id/guideline_box">
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:autofillHints="name"
+            android:background="@drawable/field_style"
+            android:hint="@string/hint_name"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/email_field"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="16dp"
+            android:background="@drawable/field_style"
+            android:hint="@string/hint_email"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress" />
+
+        <EditText
+            android:id="@+id/phone_field"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="16dp"
+            android:background="@drawable/field_style"
+            android:hint="@string/hint_phone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="phone"
+            android:autofillHints="phone" />
+
+        <EditText
+            android:id="@+id/people_field"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="16dp"
+            android:background="@drawable/field_style"
+            android:hint="@string/hint_people"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="number"
+            android:autofillHints="none" />
+
+        <TextView
+            android:id="@+id/date_field"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="16dp"
+            android:background="@drawable/field_style"
+            android:hint="@string/hint_date"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical|start" />
+
+        <TextView
+            android:id="@+id/time_field"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="8dp"
+            android:padding="16dp"
+            android:background="@drawable/field_style"
+            android:hint="@string/hint_time"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical|start" />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@+id/guideline_button">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/working_hours_mon_fri"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/tenorsans_regular"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="18sp"
+            app:autoSizeMaxTextSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/working_hours_sat_sun"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/tenorsans_regular"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="18sp"
+            app:autoSizeMaxTextSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/phone_number"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/tenorsans_regular"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="18sp"
+            app:autoSizeMaxTextSize="30sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

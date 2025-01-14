@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">HungryPeople</string>
+
+    <string name="restaurant">RESTAURANT</string>
+    <string name="restaurant_name">HUNGRY PEOPLE</string>
+    <string name="book_a_table">BOOK A TABLE</string>
+
+    <string name="working_hours_mon_fri">Mon - Fri: 8PM - 10PM</string>
+    <string name="working_hours_sat_sun">Sat - Sun: 8PM - 3AM</string>
+    <string name="phone_number">Phone: +40 729 131 637/+40 726 458 782</string>
+    
+    <string name="img_background_desc">Background image</string>
+
+    <string name="logo_app_desc">Logo</string>
+    <string name="logo_facebook">Facebook</string>
+    <string name="logo_instagram">Instagram</string>
+    <string name="logo_twitter">Twitter</string>
+
+    <string name="btn_book_table">BOOK TABLE</string>
+    <string name="btn_explore">EXPLORE</string>
+    <string name="btn_send">BOOK NOW</string>
+
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_people">People</string>
+    <string name="hint_date">Date (mm/dd)</string>
+    <string name="hint_time">Time</string>
+</resources>
