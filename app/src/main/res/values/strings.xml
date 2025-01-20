@@ -4,8 +4,17 @@
     <string name="restaurant">RESTAURANT</string>
     <string name="restaurant_name">HUNGRY PEOPLE</string>
     <string name="our_location">OUR LOCATION</string>
+    <string name="about_us">ABOUT US</string>
+    <string name="our_team">OUR TEAM</string>
+    <string name="delicious_menu">DELICIOUS MENU</string>
+    <string name="private_events">PRIVATE EVENTS</string>
+    <string name="specialties">SPECIALTIES</string>
+    <string name="gallery">GALLERY</string>
     <string name="contact">CONTACT</string>
     <string name="book_a_table">BOOK A TABLE</string>
+
+    <string name="about_us_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</string>
+    <string name="about_us_desc">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</string>
 
     <string name="working_hours_mon_fri">Mon - Fri: 8PM - 10PM</string>
     <string name="working_hours_sat_sun">Sat - Sun: 8PM - 3AM</string>

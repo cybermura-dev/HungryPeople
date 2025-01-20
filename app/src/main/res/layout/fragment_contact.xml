@@ -63,7 +63,6 @@
         app:layout_constraintGuide_percent="0.95" />
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fontFamily="@font/banny_bold"
@@ -80,18 +79,15 @@
         app:layout_constraintTop_toTopOf="@+id/guideline_top" />
 
     <View
-        android:id="@+id/colored_box"
         android:layout_width="100dp"
         android:layout_height="10dp"
         android:background="@color/primary_color"
-        android:outlineProvider="background"
         app:layout_constraintBottom_toTopOf="@+id/guideline_inputs"
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
         app:layout_constraintStart_toStartOf="@id/guideline_start"
         app:layout_constraintTop_toTopOf="@+id/guideline_box" />
 
     <GridLayout
-        android:id="@+id/grid_layout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -172,7 +168,6 @@
             android:textColorHint="@color/gray" />
     </GridLayout>
 
-    <!-- Button -->
     <Button
         android:id="@+id/btn_send_message"
         style="?android:attr/buttonBarButtonStyle"
@@ -190,7 +185,6 @@
         app:layout_constraintStart_toStartOf="@id/guideline_start"
         app:layout_constraintTop_toTopOf="@+id/guideline_button" />
 
-    <!-- Container for icon and text -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -200,7 +194,6 @@
         app:layout_constraintTop_toTopOf="@+id/guideline_contact"
         android:padding="16dp">
 
-        <!-- First item -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/first_contact"
             android:layout_width="wrap_content"
@@ -231,7 +224,6 @@
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <!-- Second item -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/second_contact"
             android:layout_width="wrap_content"
@@ -262,7 +254,6 @@
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <!-- Third item -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/third_contact"
             android:layout_width="wrap_content"

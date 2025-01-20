@@ -81,7 +81,7 @@ class BookTableActivity : AppCompatActivity() {
      */
     private fun validateInput(): Boolean {
         val name = nameField.text.toString().trim()
-        if (name.isEmpty() || !name.matches(NameRegex)) {
+        if (name.isNotEmpty() && !name.matches(NameRegex) || name.isEmpty()) {
             showToast("Enter the correct name!")
             return false
         }
@@ -103,13 +103,13 @@ class BookTableActivity : AppCompatActivity() {
         }
 
         val phone = phoneField.text.toString().trim()
-        if (phone.isNotEmpty() && !phone.matches(PhoneRegex)) {
+        if (phone.isNotEmpty() && !phone.matches(PhoneRegex) || phone.isEmpty()) {
             showToast("Enter the correct phone number!")
             return false
         }
 
         val email = emailField.text.toString().trim()
-        if (email.isNotEmpty() && !email.matches(EmailRegex)) {
+        if (email.isNotEmpty() && !email.matches(EmailRegex) || email.isEmpty()) {
             showToast("Enter a valid email!")
             return false
         }
@@ -190,12 +190,12 @@ class BookTableActivity : AppCompatActivity() {
         val people = peopleField.text.toString().toInt()
 
         val reservation = Reservation(
-            name,
-            email,
-            phone,
-            people,
-            selectedDate,
-            selectedTime
+            name = name,
+            email = email,
+            phone = phone,
+            people = people,
+            date = selectedDate,
+            time = selectedTime
         )
 
         lifecycleScope.launch {
@@ -203,7 +203,7 @@ class BookTableActivity : AppCompatActivity() {
                 SupabaseClient.addReservation(reservation)
                 showToast("Reservation successful!")
             } catch (e: Exception) {
-                showToast("Error saving reservation: ${e.message}")
+                showToast("Error saving reservation!")
                 e.printStackTrace()
             }
         }

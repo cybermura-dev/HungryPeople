@@ -32,14 +32,14 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.25" />
+        app:layout_constraintGuide_percent="0.3" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_map"
+        android:id="@+id/guideline_menu"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.3" />
+        app:layout_constraintGuide_percent="0.35" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_bottom"
@@ -53,7 +53,7 @@
         android:layout_height="0dp"
         android:fontFamily="@font/banny_bold"
         android:gravity="center"
-        android:text="@string/our_location"
+        android:text="@string/delicious_menu"
         android:textColor="@color/black"
         app:autoSizeMaxTextSize="70sp"
         app:autoSizeMinTextSize="30sp"
@@ -68,17 +68,8 @@
         android:layout_width="100dp"
         android:layout_height="10dp"
         android:background="@color/primary_color"
-        app:layout_constraintBottom_toTopOf="@+id/guideline_map"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_menu"
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
         app:layout_constraintStart_toStartOf="@id/guideline_start"
         app:layout_constraintTop_toTopOf="@+id/guideline_box" />
-
-    <com.yandex.mapkit.mapview.MapView
-        android:id="@+id/map_view"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@id/guideline_bottom"
-        app:layout_constraintEnd_toEndOf="@id/guideline_end"
-        app:layout_constraintStart_toStartOf="@id/guideline_start"
-        app:layout_constraintTop_toTopOf="@+id/guideline_map" />
 </androidx.constraintlayout.widget.ConstraintLayout>

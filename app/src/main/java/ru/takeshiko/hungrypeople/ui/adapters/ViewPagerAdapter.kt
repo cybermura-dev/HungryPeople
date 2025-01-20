@@ -3,8 +3,14 @@ package ru.takeshiko.hungrypeople.ui.adapters
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import ru.takeshiko.hungrypeople.ui.fragments.AboutUsFragment
 import ru.takeshiko.hungrypeople.ui.fragments.ContactFragment
+import ru.takeshiko.hungrypeople.ui.fragments.GalleryFragment
 import ru.takeshiko.hungrypeople.ui.fragments.LocationFragment
+import ru.takeshiko.hungrypeople.ui.fragments.MenuFragment
+import ru.takeshiko.hungrypeople.ui.fragments.OurTeamFragment
+import ru.takeshiko.hungrypeople.ui.fragments.PrivateEventsFragment
+import ru.takeshiko.hungrypeople.ui.fragments.SpecialtiesFragment
 
 /**
  * ViewPagerAdapter is a custom adapter for ViewPager2 that manages fragments.
@@ -18,7 +24,7 @@ class ViewPagerAdapter(fragmentActivity: FragmentActivity) : FragmentStateAdapte
      *
      * @return The number of fragments, which is 2 in this case.
      */
-    override fun getItemCount(): Int = 2
+    override fun getItemCount(): Int = 8
 
     /**
      * Creates and returns a fragment for the specified position.
@@ -30,9 +36,15 @@ class ViewPagerAdapter(fragmentActivity: FragmentActivity) : FragmentStateAdapte
      */
     override fun createFragment(position: Int): Fragment {
         return when (position) {
-            0 -> ContactFragment()
-            1 -> LocationFragment()
-            else -> ContactFragment() // Fallback to ContactFragment for unexpected positions
+            0 -> AboutUsFragment()
+            1 -> OurTeamFragment()
+            2 -> MenuFragment()
+            3 -> SpecialtiesFragment()
+            4 -> GalleryFragment()
+            5 -> PrivateEventsFragment()
+            6 -> ContactFragment()
+            7 -> LocationFragment()
+            else -> AboutUsFragment() // Fallback to AboutUsFragment for unexpected positions
         }
     }
 }
