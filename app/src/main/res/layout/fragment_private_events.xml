@@ -3,8 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white">
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_slider"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/img_background_desc" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_start"
@@ -35,7 +41,7 @@
         app:layout_constraintGuide_percent="0.25" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_map"
+        android:id="@+id/guideline_events"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="horizontal"
@@ -53,8 +59,8 @@
         android:layout_height="0dp"
         android:fontFamily="@font/banny_bold"
         android:gravity="center"
-        android:text="@string/our_location"
-        android:textColor="@color/black"
+        android:text="@string/private_events"
+        android:textColor="@color/white"
         app:autoSizeMaxTextSize="70sp"
         app:autoSizeMinTextSize="30sp"
         app:autoSizeStepGranularity="2sp"
@@ -68,17 +74,35 @@
         android:layout_width="100dp"
         android:layout_height="10dp"
         android:background="@color/primary_color"
-        app:layout_constraintBottom_toTopOf="@+id/guideline_map"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_events"
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
         app:layout_constraintStart_toStartOf="@id/guideline_start"
         app:layout_constraintTop_toTopOf="@+id/guideline_box" />
 
-    <com.yandex.mapkit.mapview.MapView
-        android:id="@+id/map_view"
+    <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@id/guideline_bottom"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
-        app:layout_constraintStart_toStartOf="@id/guideline_start"
-        app:layout_constraintTop_toTopOf="@+id/guideline_map" />
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintTop_toTopOf="@+id/guideline_events">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/img_private_events_1"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/img_private_events_2"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

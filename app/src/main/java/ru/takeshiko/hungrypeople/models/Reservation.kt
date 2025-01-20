@@ -15,6 +15,7 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class Reservation(
+    val id: Int? = null,
     val name: String,
     val email: String?,
     val phone: String?,

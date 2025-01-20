@@ -54,6 +54,7 @@ dependencies {
     implementation("androidx.viewpager2:viewpager2:1.1.0")
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.constraintlayout:constraintlayout:2.2.0")
+    implementation("com.tbuonomo:dotsindicator:5.1.0")
 
     // Supabase dependencies
     implementation(platform("io.github.jan-tennert.supabase:bom:3.0.3"))

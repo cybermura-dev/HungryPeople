@@ -3,6 +3,7 @@ package ru.takeshiko.hungrypeople.clients
 import io.github.jan.supabase.createSupabaseClient
 import io.github.jan.supabase.postgrest.Postgrest
 import io.github.jan.supabase.postgrest.postgrest
+import ru.takeshiko.hungrypeople.models.ContactMessage
 import ru.takeshiko.hungrypeople.models.Reservation
 
 /**
@@ -32,5 +33,10 @@ object SupabaseClient {
     suspend fun addReservation(reservation: Reservation) {
         // Insert the reservation data into the "reservations" table in Supabase.
         supabaseClient.postgrest["reservations"].insert(reservation)
+    }
+
+    suspend fun addContactMessage(message: ContactMessage) {
+        // Insert the reservation data into the "contact_messages" table in Supabase.
+        supabaseClient.postgrest["contact_messages"].insert(message)
     }
 }
