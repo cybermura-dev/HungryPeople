@@ -193,6 +193,51 @@ src
 │   │   │                           SpecialtiesFragment.kt
 ```
 
+### Core Components
+
+Core components handle the essential functionalities of the app, such as networking, database interaction, and core services:
+
+- **`SupabaseClient.kt`**: Handles interactions with the Supabase backend for managing reservations, contact messages, and fetching products from the database.
+- **`HungryPeopleApp.kt`**: Initializes global settings for the application, including the Yandex MapKit API key and MapKit setup.
+  
+### UI Components
+
+UI components define the app's user interface elements, including activities, fragments, and UI-specific logic:
+
+- **Activities:**
+  - `HomeActivity.kt`: The main entry point of the app where users can start their experience.
+  - `BookTableActivity.kt`: Allows users to make table reservations.
+  - `ExploreActivity.kt`: Allows users to explore different menu categories and items.
+  - `CategoryActivity.kt`: Displays products from a specific category.
+  - `SplashActivity.kt`: Shows a splash screen when the app is launched.
+  
+- **Fragments:**
+  - `AboutUsFragment.kt`: Displays information about the restaurant.
+  - `ContactFragment.kt`: Displays contact information and a form to send a message.
+  - `GalleryFragment.kt`: Displays a gallery of images related to the restaurant.
+  - `LocationFragment.kt`: Displays restaurant location on a map.
+  - `MenuFragment.kt`: Displays the menu with different food options.
+  - `OurTeamFragment.kt`: Displays the team behind the restaurant.
+  - `PrivateEventsFragment.kt`: Displays information about private events and bookings.
+  - `SpecialtiesFragment.kt`: Displays the restaurant's special dishes.
+
+- **Adapters:**
+  - `GalleryAdapter.kt`: Binds gallery data to the UI.
+  - `ProductAdapter.kt`: Binds product data to the menu UI.
+  - `SpecialtyAdapter.kt`: Binds specialty items to the UI.
+  - `ViewPagerAdapter.kt`: Binds data to view pager components for sliding views.
+
+- **Animators:**
+  - `ViewClickAnimator.kt`: Handles animations for UI elements when clicked.
+
+### Database Models
+
+These classes define the data models used for storing and retrieving data from the database:
+
+- **`ContactMessage.kt`:** Defines the structure for storing contact messages sent by users.
+- **`Product.kt`:** Represents a product in the menu with attributes like name, price, and category.
+- **`Reservation.kt`:** Represents a reservation made by a user, including details like date, time, and number of people.
+
 ## Build Configuration
 
 ### Gradle Dependencies
