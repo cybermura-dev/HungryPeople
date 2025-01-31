@@ -61,7 +61,7 @@
         android:gravity="center"
         android:text="@string/private_events"
         android:textColor="@color/white"
-        app:autoSizeMaxTextSize="70sp"
+        app:autoSizeMaxTextSize="80sp"
         app:autoSizeMinTextSize="30sp"
         app:autoSizeStepGranularity="2sp"
         app:autoSizeTextType="uniform"

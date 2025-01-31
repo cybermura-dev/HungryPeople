@@ -1,8 +1,25 @@
 [versions]
 agp = "8.7.3"
+appcompat = "1.7.0"
+bom = "3.0.3"
+constraintlayout = "2.2.0"
+dotsindicator = "5.1.0"
 kotlin = "2.0.0"
+ktorClientAndroid = "3.0.3"
+mapsMobile = "4.10.1-lite"
+material = "1.12.0"
+viewpager2 = "1.1.0"
 
 [libraries]
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+androidx-viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+bom = { module = "io.github.jan-tennert.supabase:bom", version.ref = "bom" }
+dotsindicator = { module = "com.tbuonomo:dotsindicator", version.ref = "dotsindicator" }
+ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktorClientAndroid" }
+maps-mobile = { module = "com.yandex.android:maps.mobile", version.ref = "mapsMobile" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+postgrest-kt = { module = "io.github.jan-tennert.supabase:postgrest-kt" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

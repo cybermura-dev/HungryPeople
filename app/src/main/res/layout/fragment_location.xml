@@ -55,7 +55,7 @@
         android:gravity="center"
         android:text="@string/our_location"
         android:textColor="@color/black"
-        app:autoSizeMaxTextSize="70sp"
+        app:autoSizeMaxTextSize="80sp"
         app:autoSizeMinTextSize="30sp"
         app:autoSizeStepGranularity="2sp"
         app:autoSizeTextType="uniform"

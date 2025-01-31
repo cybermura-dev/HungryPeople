@@ -55,7 +55,7 @@
         android:gravity="center"
         android:text="@string/delicious_menu"
         android:textColor="@color/black"
-        app:autoSizeMaxTextSize="70sp"
+        app:autoSizeMaxTextSize="80sp"
         app:autoSizeMinTextSize="30sp"
         app:autoSizeStepGranularity="2sp"
         app:autoSizeTextType="uniform"
@@ -65,6 +65,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline_top" />
 
     <View
+        android:id="@+id/view"
         android:layout_width="100dp"
         android:layout_height="10dp"
         android:background="@color/primary_color"
@@ -72,4 +73,123 @@
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
         app:layout_constraintStart_toStartOf="@id/guideline_start"
         app:layout_constraintTop_toTopOf="@+id/guideline_box" />
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@+id/guideline_menu"
+        app:layout_constraintVertical_bias="0.1">
+
+        <Button
+            android:id="@+id/btn_soupe"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/btn_primary"
+            android:text="@string/btn_soupe"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/tenorsans_regular"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btn_pizza"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/btn_primary"
+            android:text="@string/btn_pizza"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/tenorsans_regular"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btn_pasta"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/btn_primary"
+            android:text="@string/btn_pasta"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/tenorsans_regular"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btn_desert"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/btn_primary"
+            android:text="@string/btn_desert"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/tenorsans_regular"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btn_wine"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/btn_primary"
+            android:text="@string/btn_wine"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/tenorsans_regular"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btn_beer"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/btn_primary"
+            android:text="@string/btn_beer"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/tenorsans_regular"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btn_drinks"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/btn_primary"
+            android:text="@string/btn_drinks"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/tenorsans_regular"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+    </GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

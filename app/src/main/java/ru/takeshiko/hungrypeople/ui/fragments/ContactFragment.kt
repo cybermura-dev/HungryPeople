@@ -86,7 +86,7 @@ class ContactFragment : Fragment(R.layout.fragment_contact) {
         }
 
         val contactMessage = contactMessageField.text.toString().trim()
-        if (contactMessage.isNotEmpty()) {
+        if (contactMessage.isEmpty()) {
             showToast("Enter a message!")
             return false
         }
@@ -114,7 +114,7 @@ class ContactFragment : Fragment(R.layout.fragment_contact) {
         lifecycleScope.launch {
             try {
                 SupabaseClient.addContactMessage(contactMessage)
-                showToast("Reservation successful!")
+                showToast("Contact message sended successful!")
             } catch (e: Exception) {
                 showToast("Error saving contact message!")
                 e.printStackTrace()

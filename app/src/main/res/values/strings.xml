@@ -19,7 +19,7 @@
     <string name="working_hours_mon_fri">Mon - Fri: 8PM - 10PM</string>
     <string name="working_hours_sat_sun">Sat - Sun: 8PM - 3AM</string>
     <string name="phone_number">Phone: +40 729 131 637/+40 726 458 782</string>
-    
+
     <string name="img_background_desc">Background image</string>
 
     <string name="logo_app_desc">Logo</string>
@@ -34,6 +34,13 @@
     <string name="btn_explore">EXPLORE</string>
     <string name="btn_send">BOOK NOW</string>
     <string name="btn_send_message">SEND MESSAGE</string>
+    <string name="btn_soupe">SOUPE</string>
+    <string name="btn_pizza">PIZZA</string>
+    <string name="btn_pasta">PASTA</string>
+    <string name="btn_desert">DESERT</string>
+    <string name="btn_wine">WINE</string>
+    <string name="btn_beer">BEER</string>
+    <string name="btn_drinks">DRINKS</string>
 
     <string name="hint_name">Name</string>
     <string name="hint_email">Email</string>
@@ -46,4 +53,6 @@
     <string name="contact_address">5th London Boulevard, U.K.</string>
     <string name="contact_phone">+40 729 131 637 \\\n+40 726 458 782</string>
     <string name="contact_email">office@mindblister.com</string>
+
+    <string name="price_format">\$%.2f</string>
 </resources>

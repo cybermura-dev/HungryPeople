@@ -86,7 +86,6 @@
         app:layout_constraintGuide_percent="0.95" />
 
     <ImageView
-        android:id="@+id/logo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:adjustViewBounds="true"
@@ -131,7 +130,6 @@
         app:layout_constraintTop_toTopOf="@+id/guideline_subtitle" />
 
     <View
-        android:id="@+id/colored_box"
         android:layout_width="100dp"
         android:layout_height="10dp"
         android:background="@color/primary_color"

@@ -50,21 +50,21 @@ repositories {
 dependencies {
 
     // App dependencies
-    implementation("androidx.appcompat:appcompat:1.7.0")
-    implementation("androidx.viewpager2:viewpager2:1.1.0")
-    implementation("com.google.android.material:material:1.12.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.2.0")
-    implementation("com.tbuonomo:dotsindicator:5.1.0")
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.viewpager2)
+    implementation(libs.material)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.dotsindicator)
 
     // Supabase dependencies
-    implementation(platform("io.github.jan-tennert.supabase:bom:3.0.3"))
-    implementation("io.github.jan-tennert.supabase:postgrest-kt")
+    implementation(platform(libs.bom))
+    implementation(libs.postgrest.kt)
 
     // Networking
-    implementation("io.ktor:ktor-client-android:3.0.3")
+    implementation(libs.ktor.client.android)
 
     // SDK Yandex Map Kit
-    implementation("com.yandex.android:maps.mobile:4.10.1-lite")
+    implementation(libs.maps.mobile)
 
     // Testing dependencies
     // testImplementation("junit:junit:4.13.2")
