@@ -148,49 +148,49 @@ Network requests are handled using **Ktor** client, interacting with Supabase an
 Here's an overview of the project's directory structure:
 
 ```bash
-src
-│   ├───main
-│   │   │   AndroidManifest.xml
-│   │   │
-│   │   ├───java
-│   │   │   └───ru
-│   │   │       └───takeshiko
-│   │   │           └───hungrypeople
-│   │   │               │   HungryPeopleApp.kt
-│   │   │               │
-│   │   │               ├───clients
-│   │   │               │       SupabaseClient.kt
-│   │   │               │
-│   │   │               ├───models
-│   │   │               │       ContactMessage.kt
-│   │   │               │       Product.kt
-│   │   │               │       Reservation.kt
-│   │   │               │
-│   │   │               └───ui
-│   │   │                   │   BookTableActivity.kt
-│   │   │                   │   CategoryActivity.kt
-│   │   │                   │   ExploreActivity.kt
-│   │   │                   │   HomeActivity.kt
-│   │   │                   │   SplashActivity.kt
-│   │   │                   │
-│   │   │                   ├───adapters
-│   │   │                   │       GalleryAdapter.kt
-│   │   │                   │       ProductAdapter.kt
-│   │   │                   │       SpecialtyAdapter.kt
-│   │   │                   │       ViewPagerAdapter.kt
-│   │   │                   │
-│   │   │                   ├───animators
-│   │   │                   │       ViewClickAnimator.kt
-│   │   │                   │
-│   │   │                   └───fragments
-│   │   │                           AboutUsFragment.kt
-│   │   │                           ContactFragment.kt
-│   │   │                           GalleryFragment.kt
-│   │   │                           LocationFragment.kt
-│   │   │                           MenuFragment.kt
-│   │   │                           OurTeamFragment.kt
-│   │   │                           PrivateEventsFragment.kt
-│   │   │                           SpecialtiesFragment.kt
+src/
+├── main/
+│   ├── AndroidManifest.xml          # Android Manifest file
+│   ├── java/
+│   │   └── ru/
+│   │       └── takeshiko/
+│   │           └── hungrypeople/
+│   │               ├── HungryPeopleApp.kt   # Main application class
+│   │               │
+│   │               ├── clients/              # Network clients (e.g., Supabase)
+│   │               │   └── SupabaseClient.kt
+│   │               │
+│   │               ├── models/               # Data models
+│   │               │   ├── ContactMessage.kt
+│   │               │   ├── Product.kt
+│   │               │   └── Reservation.kt
+│   │               │
+│   │               ├── ui/                   # UI components (activities, fragments, etc.)
+│   │               │   ├── BookTableActivity.kt
+│   │               │   ├── CategoryActivity.kt
+│   │               │   ├── ExploreActivity.kt
+│   │               │   ├── HomeActivity.kt
+│   │               │   ├── SplashActivity.kt
+│   │               │   │
+│   │               │   ├── adapters/          # RecyclerView Adapters
+│   │               │   │   ├── GalleryAdapter.kt
+│   │               │   │   ├── ProductAdapter.kt
+│   │               │   │   ├── SpecialtyAdapter.kt
+│   │               │   │   └── ViewPagerAdapter.kt
+│   │               │   │
+│   │               │   ├── animators/         # UI transition animations
+│   │               │   │   └── ViewClickAnimator.kt
+│   │               │   │
+│   │               │   └── fragments/          # Fragments used in the app
+│   │               │       ├── AboutUsFragment.kt
+│   │               │       ├── ContactFragment.kt
+│   │               │       ├── GalleryFragment.kt
+│   │               │       ├── LocationFragment.kt
+│   │               │       ├── MenuFragment.kt
+│   │               │       ├── OurTeamFragment.kt
+│   │               │       ├── PrivateEventsFragment.kt
+│   │               │       └── SpecialtiesFragment.kt
+└── res/                             # Application resources (layout, values, etc.)
 ```
 
 ### Core Components
