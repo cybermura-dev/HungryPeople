@@ -68,7 +68,7 @@ Ensure the following tools and SDKs are installed before setting up the project:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/takeshikodev/HungryPeople.git
+   git clone https://github.com/cybermura-dev/HungryPeople.git
    cd HungryPeople
    ```
 
@@ -379,4 +379,4 @@ The `AndroidManifest.xml` file includes necessary permissions and activity confi
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Copyright (c) 2025 Takeshiko 
+Copyright (c) 2025 cybermura
